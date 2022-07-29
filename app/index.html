@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/app.min.css" />
+		<title>vtop3-test</title>
+	</head>
+	<body>
+		<div class="container">
+			<main class="">
+				<aside class="">
+					<p>Sign up</p>
+				</aside>
+				<article>
+					<header>
+						<h1>New user?</h1>
+						<p class="title">Use the form below to create your account.</p>
+					</header>
+					<form name="formName" method="post" novalidate>
+						<div class="form">
+							<div class="input-field">
+								<label for="first-name">First Name</label>
+								<input
+									type="text"
+									id="first-name"
+									name="first_name"
+									value="Alice"
+								/>
+								<span class="" aria-live="polite"></span>
+							</div>
+
+							<div class="input-field">
+								<label for="last-name">Last Name</label>
+								<input
+									type="text"
+									id="last-name"
+									name="last_name"
+									value="Miller"
+								/>
+								<span class="" aria-live="polite"></span>
+							</div>
+
+							<div class="input-field">
+								<label for="nationality">Nationality</label>
+								<select name="nationality" id="nationality">
+									<option>American</option>
+									<option>Russian</option>
+									<option>Martian</option>
+								</select>
+							</div>
+
+							<div class="input-field">
+								<label for="email">E-mail</label>
+								<input
+									class="email"
+									type="email"
+									id="email"
+									name="email"
+									value="alice.miller@yahoo.com"
+								/>
+								<span class="" aria-live="polite"></span>
+							</div>
+
+							<div class="date-of-birth">
+								<p class="date-of-birth__title">Date of Birth</p>
+								<div class="date-of-birth__select">
+									<select name="day" id="day"></select>
+									<select name="month" id="month"></select>
+									<select name="year" id="year"></select>
+								</div>
+							</div>
+
+							<div class="gender">
+								<p class="gender__title">Gender</p>
+								<div class="gender__field">
+									<label
+										>Male
+										<input type="radio" name="gender" />
+										<span></span>
+									</label>
+									<label
+										>Female
+										<input type="radio" name="gender" checked />
+										<span></span>
+									</label>
+								</div>
+							</div>
+							<div class="input-field">
+								<label for="psw">Password</label>
+								<input type="password" id="psw" name="psw" />
+								<span class="" aria-live="polite"></span>
+							</div>
+							<div class="input-field">
+								<label for="psw-repeat">Confirm Password</label>
+								<input type="password" id="psw-repeat" name="psw_repeat" />
+								<span class="" aria-live="polite"></span>
+							</div>
+						</div>
+						<div class="login-signup">
+							<div class="login">Have an account? <a href="#">Login</a></div>
+							<div class="signup">
+								<button type="submit" class="signup-btn" name="signup">
+									Complete Signup
+								</button>
+							</div>
+						</div>
+					</form>
+				</article>
+			</main>
+		</div>
+		<script src="js/app.min.js"></script>
+	</body>
+</html>
