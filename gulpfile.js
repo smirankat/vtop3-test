@@ -131,7 +131,7 @@ exports.images = images;
 exports.cleanimg = cleanimg;
 
 // Создаем новый таск "build", который последовательно выполняет нужные операции
-exports.build = series(cleandist, parallel(styles, scripts, images, buildcopy));
+exports.build = series(cleandist, parallel(styles, scripts, images), buildcopy);
 
 // Экспортируем дефолтный таск с нужным набором функций
 exports.default = parallel(styles, scripts, images, browsersync, startwatch);
